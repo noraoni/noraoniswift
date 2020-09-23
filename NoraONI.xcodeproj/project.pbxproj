@@ -3,18 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23D5ADEB75DE48AB88207CBF /* Pods_NoraONITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05ABE9C2076160174FA7E2FB /* Pods_NoraONITests.framework */; };
+		45819A618A14F4E8586068F3 /* Pods_NoraONI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9AF7F1CCC4AE4FB44821F8E /* Pods_NoraONI.framework */; };
 		F2FF3275251B17FA00AEF4F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF3274251B17FA00AEF4F4 /* AppDelegate.swift */; };
 		F2FF3277251B17FA00AEF4F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF3276251B17FA00AEF4F4 /* SceneDelegate.swift */; };
-		F2FF3279251B17FA00AEF4F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF3278251B17FA00AEF4F4 /* ViewController.swift */; };
 		F2FF327C251B17FA00AEF4F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FF327A251B17FA00AEF4F4 /* Main.storyboard */; };
 		F2FF327E251B17FC00AEF4F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2FF327D251B17FC00AEF4F4 /* Assets.xcassets */; };
 		F2FF3281251B17FC00AEF4F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FF327F251B17FC00AEF4F4 /* LaunchScreen.storyboard */; };
 		F2FF328C251B17FC00AEF4F4 /* NoraONITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF328B251B17FC00AEF4F4 /* NoraONITests.swift */; };
 		F2FF3297251B17FC00AEF4F4 /* NoraONIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF3296251B17FC00AEF4F4 /* NoraONIUITests.swift */; };
+		F2FF32C8251B1B9900AEF4F4 /* noraoni.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF32C5251B1B9900AEF4F4 /* noraoni.grpc.swift */; };
+		F2FF32C9251B1B9900AEF4F4 /* noraoni.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF32C6251B1B9900AEF4F4 /* noraoni.pb.swift */; };
+		F2FF32CA251B1B9900AEF4F4 /* noraoni.proto in Sources */ = {isa = PBXBuildFile; fileRef = F2FF32C7251B1B9900AEF4F4 /* noraoni.proto */; };
+		F2FF32D2251B1BF700AEF4F4 /* CreateMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF32D1251B1BF700AEF4F4 /* CreateMemberViewController.swift */; };
+		F870B4FE3107A5C97A280B3C /* Pods_NoraONI_NoraONIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DDD93F94CC05BB3420B5B65 /* Pods_NoraONI_NoraONIUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +41,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05ABE9C2076160174FA7E2FB /* Pods_NoraONITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoraONITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F6CE6C55709E8511A173A09 /* Pods-NoraONI-NoraONIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoraONI-NoraONIUITests.release.xcconfig"; path = "Target Support Files/Pods-NoraONI-NoraONIUITests/Pods-NoraONI-NoraONIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1FB5A323FC3B77675396D1C1 /* Pods-NoraONI-NoraONIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoraONI-NoraONIUITests.debug.xcconfig"; path = "Target Support Files/Pods-NoraONI-NoraONIUITests/Pods-NoraONI-NoraONIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		25713B29E0C68FCC32A62743 /* Pods-NoraONITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoraONITests.debug.xcconfig"; path = "Target Support Files/Pods-NoraONITests/Pods-NoraONITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5DDD93F94CC05BB3420B5B65 /* Pods_NoraONI_NoraONIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoraONI_NoraONIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		931EB3A3CC030C323E0D0319 /* Pods-NoraONI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoraONI.debug.xcconfig"; path = "Target Support Files/Pods-NoraONI/Pods-NoraONI.debug.xcconfig"; sourceTree = "<group>"; };
+		A9AF7F1CCC4AE4FB44821F8E /* Pods_NoraONI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoraONI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC11CDBF33637D0EE54A0C1D /* Pods-NoraONITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoraONITests.release.xcconfig"; path = "Target Support Files/Pods-NoraONITests/Pods-NoraONITests.release.xcconfig"; sourceTree = "<group>"; };
 		F2FF3271251B17FA00AEF4F4 /* NoraONI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoraONI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2FF3274251B17FA00AEF4F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2FF3276251B17FA00AEF4F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F2FF3278251B17FA00AEF4F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F2FF327B251B17FA00AEF4F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2FF327D251B17FC00AEF4F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2FF3280251B17FC00AEF4F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +62,11 @@
 		F2FF3292251B17FC00AEF4F4 /* NoraONIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoraONIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2FF3296251B17FC00AEF4F4 /* NoraONIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoraONIUITests.swift; sourceTree = "<group>"; };
 		F2FF3298251B17FC00AEF4F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2FF32C5251B1B9900AEF4F4 /* noraoni.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = noraoni.grpc.swift; sourceTree = "<group>"; };
+		F2FF32C6251B1B9900AEF4F4 /* noraoni.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = noraoni.pb.swift; sourceTree = "<group>"; };
+		F2FF32C7251B1B9900AEF4F4 /* noraoni.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = noraoni.proto; sourceTree = "<group>"; };
+		F2FF32D1251B1BF700AEF4F4 /* CreateMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMemberViewController.swift; sourceTree = "<group>"; };
+		FF9A8CBD2BAB70F3DED71903 /* Pods-NoraONI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoraONI.release.xcconfig"; path = "Target Support Files/Pods-NoraONI/Pods-NoraONI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45819A618A14F4E8586068F3 /* Pods_NoraONI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23D5ADEB75DE48AB88207CBF /* Pods_NoraONITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +90,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F870B4FE3107A5C97A280B3C /* Pods_NoraONI_NoraONIUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CF9DFE07CAD9CFBDC5F8A82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				931EB3A3CC030C323E0D0319 /* Pods-NoraONI.debug.xcconfig */,
+				FF9A8CBD2BAB70F3DED71903 /* Pods-NoraONI.release.xcconfig */,
+				1FB5A323FC3B77675396D1C1 /* Pods-NoraONI-NoraONIUITests.debug.xcconfig */,
+				0F6CE6C55709E8511A173A09 /* Pods-NoraONI-NoraONIUITests.release.xcconfig */,
+				25713B29E0C68FCC32A62743 /* Pods-NoraONITests.debug.xcconfig */,
+				BC11CDBF33637D0EE54A0C1D /* Pods-NoraONITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		62F97AFB5EAC9C831B3B387F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9AF7F1CCC4AE4FB44821F8E /* Pods_NoraONI.framework */,
+				5DDD93F94CC05BB3420B5B65 /* Pods_NoraONI_NoraONIUITests.framework */,
+				05ABE9C2076160174FA7E2FB /* Pods_NoraONITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F2FF3268251B17FA00AEF4F4 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +127,8 @@
 				F2FF328A251B17FC00AEF4F4 /* NoraONITests */,
 				F2FF3295251B17FC00AEF4F4 /* NoraONIUITests */,
 				F2FF3272251B17FA00AEF4F4 /* Products */,
+				0CF9DFE07CAD9CFBDC5F8A82 /* Pods */,
+				62F97AFB5EAC9C831B3B387F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,7 +147,10 @@
 			children = (
 				F2FF3274251B17FA00AEF4F4 /* AppDelegate.swift */,
 				F2FF3276251B17FA00AEF4F4 /* SceneDelegate.swift */,
-				F2FF3278251B17FA00AEF4F4 /* ViewController.swift */,
+				F2FF32C5251B1B9900AEF4F4 /* noraoni.grpc.swift */,
+				F2FF32C6251B1B9900AEF4F4 /* noraoni.pb.swift */,
+				F2FF32D1251B1BF700AEF4F4 /* CreateMemberViewController.swift */,
+				F2FF32C7251B1B9900AEF4F4 /* noraoni.proto */,
 				F2FF327A251B17FA00AEF4F4 /* Main.storyboard */,
 				F2FF327D251B17FC00AEF4F4 /* Assets.xcassets */,
 				F2FF327F251B17FC00AEF4F4 /* LaunchScreen.storyboard */,
@@ -135,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2FF329B251B17FC00AEF4F4 /* Build configuration list for PBXNativeTarget "NoraONI" */;
 			buildPhases = (
+				4160FE57E73AB7E565A3064B /* [CP] Check Pods Manifest.lock */,
 				F2FF326D251B17FA00AEF4F4 /* Sources */,
 				F2FF326E251B17FA00AEF4F4 /* Frameworks */,
 				F2FF326F251B17FA00AEF4F4 /* Resources */,
+				6210F68F22A707F8C624D84D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +203,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2FF329E251B17FC00AEF4F4 /* Build configuration list for PBXNativeTarget "NoraONITests" */;
 			buildPhases = (
+				519F475846F85A8EA6C6AF70 /* [CP] Check Pods Manifest.lock */,
 				F2FF3283251B17FC00AEF4F4 /* Sources */,
 				F2FF3284251B17FC00AEF4F4 /* Frameworks */,
 				F2FF3285251B17FC00AEF4F4 /* Resources */,
@@ -170,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2FF32A1251B17FC00AEF4F4 /* Build configuration list for PBXNativeTarget "NoraONIUITests" */;
 			buildPhases = (
+				38C406D7C2278BFD72A7E564 /* [CP] Check Pods Manifest.lock */,
 				F2FF328E251B17FC00AEF4F4 /* Sources */,
 				F2FF328F251B17FC00AEF4F4 /* Frameworks */,
 				F2FF3290251B17FC00AEF4F4 /* Resources */,
+				3DA598E361F4D0FF2D3455FB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,14 +307,120 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		38C406D7C2278BFD72A7E564 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NoraONI-NoraONIUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DA598E361F4D0FF2D3455FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NoraONI-NoraONIUITests/Pods-NoraONI-NoraONIUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NoraONI-NoraONIUITests/Pods-NoraONI-NoraONIUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NoraONI-NoraONIUITests/Pods-NoraONI-NoraONIUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4160FE57E73AB7E565A3064B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NoraONI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		519F475846F85A8EA6C6AF70 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NoraONITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6210F68F22A707F8C624D84D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NoraONI/Pods-NoraONI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NoraONI/Pods-NoraONI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NoraONI/Pods-NoraONI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F2FF326D251B17FA00AEF4F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2FF3279251B17FA00AEF4F4 /* ViewController.swift in Sources */,
+				F2FF32C8251B1B9900AEF4F4 /* noraoni.grpc.swift in Sources */,
 				F2FF3275251B17FA00AEF4F4 /* AppDelegate.swift in Sources */,
+				F2FF32C9251B1B9900AEF4F4 /* noraoni.pb.swift in Sources */,
 				F2FF3277251B17FA00AEF4F4 /* SceneDelegate.swift in Sources */,
+				F2FF32D2251B1BF700AEF4F4 /* CreateMemberViewController.swift in Sources */,
+				F2FF32CA251B1B9900AEF4F4 /* noraoni.proto in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +593,7 @@
 		};
 		F2FF329C251B17FC00AEF4F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 931EB3A3CC030C323E0D0319 /* Pods-NoraONI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +613,7 @@
 		};
 		F2FF329D251B17FC00AEF4F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF9A8CBD2BAB70F3DED71903 /* Pods-NoraONI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +633,7 @@
 		};
 		F2FF329F251B17FC00AEF4F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25713B29E0C68FCC32A62743 /* Pods-NoraONITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +656,7 @@
 		};
 		F2FF32A0251B17FC00AEF4F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC11CDBF33637D0EE54A0C1D /* Pods-NoraONITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +679,7 @@
 		};
 		F2FF32A2251B17FC00AEF4F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FB5A323FC3B77675396D1C1 /* Pods-NoraONI-NoraONIUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +700,7 @@
 		};
 		F2FF32A3251B17FC00AEF4F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F6CE6C55709E8511A173A09 /* Pods-NoraONI-NoraONIUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

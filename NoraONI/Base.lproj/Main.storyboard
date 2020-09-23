@@ -1,24 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Yt9-HB-rlr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Create Member View Controller-->
+        <scene sceneID="52X-KD-iWU">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="Yt9-HB-rlr" customClass="CreateMemberViewController" customModule="NoraONI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bqv-Uq-8Wb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Ya-DC-dZ5" customClass="RegistImage" customModule="NoraONI" customModuleProvider="target">
+                                <rect key="frame" x="97" y="136" width="220" height="220"/>
+                                <color key="backgroundColor" red="1" green="0.55294117649999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7Ya-DC-dZ5" secondAttribute="height" multiplier="1:1" id="CSw-bl-caq"/>
+                                    <constraint firstAttribute="width" constant="220" id="fsp-6s-9U2"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small" weight="light"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="なまえ" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MD5-X5-dr9">
+                                <rect key="frame" x="97" y="386" width="220" height="45.5"/>
+                                <color key="backgroundColor" red="1" green="0.55294117649999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="4IL-td-NJb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" textContentType="name"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HvM-cb-3jP" customClass="RegistButton" customModule="NoraONI" customModuleProvider="target">
+                                <rect key="frame" x="132" y="471.5" width="150" height="150"/>
+                                <color key="backgroundColor" red="0.49019607840000001" green="0.16078431369999999" blue="0.50980392159999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Xav-d2-Ftp"/>
+                                    <constraint firstAttribute="width" secondItem="HvM-cb-3jP" secondAttribute="height" multiplier="1:1" id="wnp-qh-7jQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Regist">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="RegistUser:" destination="Yt9-HB-rlr" eventType="touchUpInside" id="Ov0-2g-OVH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ユーザー登録" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFo-eV-tYJ">
+                                <rect key="frame" x="101" y="84" width="212" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDR-tA-BKP" customClass="RegistButton" customModule="NoraONI" customModuleProvider="target">
+                                <rect key="frame" x="340" y="306" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.48627450979999998" green="0.7843137255" blue="0.91372549020000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DDR-tA-BKP" secondAttribute="height" multiplier="1:1" id="FCE-NO-C0u"/>
+                                    <constraint firstAttribute="height" constant="50" id="r0B-L7-peV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="追加"/>
+                                <connections>
+                                    <action selector="AddImage:" destination="Yt9-HB-rlr" eventType="touchUpInside" id="yx6-ga-26U"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kET-In-3jp"/>
+                        <color key="backgroundColor" red="0.43105201199999998" green="0.75430757709999996" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="HvM-cb-3jP" firstAttribute="centerX" secondItem="Bqv-Uq-8Wb" secondAttribute="centerX" id="2u2-KJ-2lJ"/>
+                            <constraint firstItem="7Ya-DC-dZ5" firstAttribute="top" secondItem="YFo-eV-tYJ" secondAttribute="bottom" constant="10" id="5kF-82-GBZ"/>
+                            <constraint firstItem="MD5-X5-dr9" firstAttribute="top" secondItem="7Ya-DC-dZ5" secondAttribute="bottom" constant="30" id="9VE-PP-0ir"/>
+                            <constraint firstItem="YFo-eV-tYJ" firstAttribute="centerX" secondItem="Bqv-Uq-8Wb" secondAttribute="centerX" id="KId-NY-jM1"/>
+                            <constraint firstItem="MD5-X5-dr9" firstAttribute="centerX" secondItem="Bqv-Uq-8Wb" secondAttribute="centerX" id="Xcl-vi-I9J"/>
+                            <constraint firstItem="7Ya-DC-dZ5" firstAttribute="centerX" secondItem="Bqv-Uq-8Wb" secondAttribute="centerX" id="Zxs-92-pmZ"/>
+                            <constraint firstItem="DDR-tA-BKP" firstAttribute="leading" secondItem="7Ya-DC-dZ5" secondAttribute="trailing" constant="23" id="dJZ-j6-wvw"/>
+                            <constraint firstItem="YFo-eV-tYJ" firstAttribute="top" secondItem="kET-In-3jp" secondAttribute="top" constant="40" id="i1o-nT-WOi"/>
+                            <constraint firstItem="HvM-cb-3jP" firstAttribute="top" secondItem="MD5-X5-dr9" secondAttribute="bottom" constant="40" id="ty5-0T-l1d"/>
+                            <constraint firstItem="DDR-tA-BKP" firstAttribute="top" secondItem="kET-In-3jp" secondAttribute="top" constant="262" id="y1X-5a-8l0"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="image" destination="7Ya-DC-dZ5" id="gsm-EU-dKE"/>
+                        <outlet property="name" destination="MD5-X5-dr9" id="1gL-CJ-sqo"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aIe-xt-9o3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-436.23188405797106" y="4.6875"/>
         </scene>
     </scenes>
 </document>
