@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Yt9-HB-rlr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gi9-0b-Wc2">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -93,5 +94,183 @@
             </objects>
             <point key="canvasLocation" x="-436.23188405797106" y="4.6875"/>
         </scene>
+        <!--Setting Rule View Controller-->
+        <scene sceneID="wjb-JT-Lkl">
+            <objects>
+                <viewController id="BaH-Lo-TSF" customClass="SettingRuleViewController" customModule="NoraONI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9P8-AN-bE3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="owH-xV-xf1">
+                                <rect key="frame" x="57" y="118" width="300" height="145"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zfc-1z-L1m" customClass="RegistButton" customModule="NoraONI" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="145"/>
+                                        <color key="backgroundColor" red="0.43105201199999998" green="0.75430757709999996" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="145" id="Aif-cD-wUs"/>
+                                            <constraint firstAttribute="width" secondItem="Zfc-1z-L1m" secondAttribute="height" multiplier="1:1" id="WVK-ou-xju"/>
+                                        </constraints>
+                                        <state key="normal" title="POSITION1">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getPosition:" destination="BaH-Lo-TSF" eventType="touchUpInside" id="Wd5-fI-pYE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJa-TC-ELK" customClass="RegistButton" customModule="NoraONI" customModuleProvider="target">
+                                        <rect key="frame" x="155" y="0.0" width="145" height="145"/>
+                                        <color key="backgroundColor" red="0.49019607840000001" green="0.16078431369999999" blue="0.50980392159999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="nJa-TC-ELK" secondAttribute="height" multiplier="1:1" id="HDb-dj-OLH"/>
+                                            <constraint firstAttribute="width" constant="145" id="Vdk-E0-0oT"/>
+                                        </constraints>
+                                        <state key="normal" title="POSITION2">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getPosition:" destination="BaH-Lo-TSF" eventType="touchUpInside" id="rQa-8C-ktf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="3NR-dU-ZIp"/>
+                                </constraints>
+                            </stackView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="aIz-XV-MGj">
+                                <rect key="frame" x="57" y="303" width="337" height="524"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fXK-Bb-E2X"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="owH-xV-xf1" firstAttribute="centerX" secondItem="9P8-AN-bE3" secondAttribute="centerX" id="qUi-4h-cbe"/>
+                            <constraint firstItem="owH-xV-xf1" firstAttribute="top" secondItem="fXK-Bb-E2X" secondAttribute="top" constant="30" id="rNo-mq-RA9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MaM-ml-DRl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n78-6Z-5XA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1500.0000000000002" y="799.55357142857144"/>
+        </scene>
+        <!--Member List View Controller-->
+        <scene sceneID="skt-1R-Nr7">
+            <objects>
+                <viewController id="V92-Iw-1Kh" customClass="MemberListViewController" customModule="NoraONI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ry2-gz-5HE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23U-fG-6Tf" customClass="RegistButton" customModule="NoraONI" customModuleProvider="target">
+                                <rect key="frame" x="80" y="128" width="70" height="70"/>
+                                <color key="backgroundColor" red="0.43105201199999998" green="0.75430757709999996" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="23U-fG-6Tf" secondAttribute="height" multiplier="1:1" id="WWB-gk-tjh"/>
+                                    <constraint firstAttribute="width" constant="70" id="yK5-7v-MJa"/>
+                                </constraints>
+                                <state key="normal" title="HOST">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BaH-Lo-TSF" kind="show" id="yXI-Yu-2IU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGB-o9-Kbj" customClass="RegistButton" customModule="NoraONI" customModuleProvider="target">
+                                <rect key="frame" x="264" y="128" width="70" height="70"/>
+                                <color key="backgroundColor" red="0.49019607840000001" green="0.16078431369999999" blue="0.50980392159999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GGB-o9-Kbj" secondAttribute="height" multiplier="1:1" id="cFG-hy-kAg"/>
+                                    <constraint firstAttribute="width" constant="70" id="lGH-dI-7qU"/>
+                                </constraints>
+                                <state key="normal" title="MEMBER">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="member:" destination="V92-Iw-1Kh" eventType="touchUpInside" id="g6J-ou-pZf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ge-zc-HPH" customClass="RegistButton" customModule="NoraONI" customModuleProvider="target">
+                                <rect key="frame" x="167" y="752" width="80" height="80"/>
+                                <color key="backgroundColor" red="1" green="0.55294117649999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5Ge-zc-HPH" secondAttribute="height" multiplier="1:1" id="f4g-oB-XOM"/>
+                                    <constraint firstAttribute="width" constant="80" id="mAo-RK-4AQ"/>
+                                </constraints>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kcm-mc-w8v">
+                                <rect key="frame" x="20" y="246" width="374" height="405"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="cell" textLabel="jH6-QX-k59" style="IBUITableViewCellStyleDefault" id="Voj-0V-Dyx">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Voj-0V-Dyx" id="6Kf-H1-tBU">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" id="jH6-QX-k59">
+                                                    <rect key="frame" x="20" y="0.0" width="334" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vfq-73-6Sx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vfq-73-6Sx" firstAttribute="trailing" secondItem="GGB-o9-Kbj" secondAttribute="trailing" constant="80" id="Sbt-y8-0aq"/>
+                            <constraint firstItem="5Ge-zc-HPH" firstAttribute="centerX" secondItem="ry2-gz-5HE" secondAttribute="centerX" id="Ttp-xg-CEE"/>
+                            <constraint firstItem="23U-fG-6Tf" firstAttribute="leading" secondItem="vfq-73-6Sx" secondAttribute="leading" constant="80" id="bHd-wb-nk2"/>
+                            <constraint firstItem="23U-fG-6Tf" firstAttribute="top" secondItem="vfq-73-6Sx" secondAttribute="top" constant="40" id="h9R-yd-G2Z"/>
+                            <constraint firstItem="vfq-73-6Sx" firstAttribute="bottom" secondItem="5Ge-zc-HPH" secondAttribute="bottom" constant="30" id="rTo-C8-dDT"/>
+                            <constraint firstItem="GGB-o9-Kbj" firstAttribute="top" secondItem="vfq-73-6Sx" secondAttribute="top" constant="40" id="yjy-Ap-mey"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8hY-bC-BBH"/>
+                    <connections>
+                        <outlet property="memberButton" destination="GGB-o9-Kbj" id="sgx-3t-spu"/>
+                        <outlet property="membersTableView" destination="Kcm-mc-w8v" id="fhU-bw-1I8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8kv-10-0bU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1501.449275362319" y="16.741071428571427"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eZ3-xv-yWy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gi9-0b-Wc2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="g4q-nP-3Kz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="V92-Iw-1Kh" kind="relationship" relationship="rootViewController" id="Vje-7F-uIR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Db5-AS-Ztd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="591.304347826087" y="16.741071428571427"/>
+        </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

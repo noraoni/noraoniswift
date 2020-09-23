@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		23D5ADEB75DE48AB88207CBF /* Pods_NoraONITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05ABE9C2076160174FA7E2FB /* Pods_NoraONITests.framework */; };
 		45819A618A14F4E8586068F3 /* Pods_NoraONI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9AF7F1CCC4AE4FB44821F8E /* Pods_NoraONI.framework */; };
+		F2B028E9251B5D550063ECD4 /* SettingRuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B028E8251B5D550063ECD4 /* SettingRuleViewController.swift */; };
 		F2FF3275251B17FA00AEF4F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF3274251B17FA00AEF4F4 /* AppDelegate.swift */; };
 		F2FF3277251B17FA00AEF4F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF3276251B17FA00AEF4F4 /* SceneDelegate.swift */; };
 		F2FF327C251B17FA00AEF4F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FF327A251B17FA00AEF4F4 /* Main.storyboard */; };
@@ -16,10 +17,8 @@
 		F2FF3281251B17FC00AEF4F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FF327F251B17FC00AEF4F4 /* LaunchScreen.storyboard */; };
 		F2FF328C251B17FC00AEF4F4 /* NoraONITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF328B251B17FC00AEF4F4 /* NoraONITests.swift */; };
 		F2FF3297251B17FC00AEF4F4 /* NoraONIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF3296251B17FC00AEF4F4 /* NoraONIUITests.swift */; };
-		F2FF32C8251B1B9900AEF4F4 /* noraoni.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF32C5251B1B9900AEF4F4 /* noraoni.grpc.swift */; };
-		F2FF32C9251B1B9900AEF4F4 /* noraoni.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF32C6251B1B9900AEF4F4 /* noraoni.pb.swift */; };
-		F2FF32CA251B1B9900AEF4F4 /* noraoni.proto in Sources */ = {isa = PBXBuildFile; fileRef = F2FF32C7251B1B9900AEF4F4 /* noraoni.proto */; };
 		F2FF32D2251B1BF700AEF4F4 /* CreateMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF32D1251B1BF700AEF4F4 /* CreateMemberViewController.swift */; };
+		F2FF32E6251B4A0900AEF4F4 /* MemberListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF32E5251B4A0900AEF4F4 /* MemberListViewController.swift */; };
 		F870B4FE3107A5C97A280B3C /* Pods_NoraONI_NoraONIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DDD93F94CC05BB3420B5B65 /* Pods_NoraONI_NoraONIUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +48,7 @@
 		931EB3A3CC030C323E0D0319 /* Pods-NoraONI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoraONI.debug.xcconfig"; path = "Target Support Files/Pods-NoraONI/Pods-NoraONI.debug.xcconfig"; sourceTree = "<group>"; };
 		A9AF7F1CCC4AE4FB44821F8E /* Pods_NoraONI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoraONI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC11CDBF33637D0EE54A0C1D /* Pods-NoraONITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoraONITests.release.xcconfig"; path = "Target Support Files/Pods-NoraONITests/Pods-NoraONITests.release.xcconfig"; sourceTree = "<group>"; };
+		F2B028E8251B5D550063ECD4 /* SettingRuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRuleViewController.swift; sourceTree = "<group>"; };
 		F2FF3271251B17FA00AEF4F4 /* NoraONI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoraONI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2FF3274251B17FA00AEF4F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2FF3276251B17FA00AEF4F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,10 +62,8 @@
 		F2FF3292251B17FC00AEF4F4 /* NoraONIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoraONIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2FF3296251B17FC00AEF4F4 /* NoraONIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoraONIUITests.swift; sourceTree = "<group>"; };
 		F2FF3298251B17FC00AEF4F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2FF32C5251B1B9900AEF4F4 /* noraoni.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = noraoni.grpc.swift; sourceTree = "<group>"; };
-		F2FF32C6251B1B9900AEF4F4 /* noraoni.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = noraoni.pb.swift; sourceTree = "<group>"; };
-		F2FF32C7251B1B9900AEF4F4 /* noraoni.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = noraoni.proto; sourceTree = "<group>"; };
 		F2FF32D1251B1BF700AEF4F4 /* CreateMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMemberViewController.swift; sourceTree = "<group>"; };
+		F2FF32E5251B4A0900AEF4F4 /* MemberListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListViewController.swift; sourceTree = "<group>"; };
 		FF9A8CBD2BAB70F3DED71903 /* Pods-NoraONI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoraONI.release.xcconfig"; path = "Target Support Files/Pods-NoraONI/Pods-NoraONI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,10 +145,9 @@
 			children = (
 				F2FF3274251B17FA00AEF4F4 /* AppDelegate.swift */,
 				F2FF3276251B17FA00AEF4F4 /* SceneDelegate.swift */,
-				F2FF32C5251B1B9900AEF4F4 /* noraoni.grpc.swift */,
-				F2FF32C6251B1B9900AEF4F4 /* noraoni.pb.swift */,
 				F2FF32D1251B1BF700AEF4F4 /* CreateMemberViewController.swift */,
-				F2FF32C7251B1B9900AEF4F4 /* noraoni.proto */,
+				F2FF32E5251B4A0900AEF4F4 /* MemberListViewController.swift */,
+				F2B028E8251B5D550063ECD4 /* SettingRuleViewController.swift */,
 				F2FF327A251B17FA00AEF4F4 /* Main.storyboard */,
 				F2FF327D251B17FC00AEF4F4 /* Assets.xcassets */,
 				F2FF327F251B17FC00AEF4F4 /* LaunchScreen.storyboard */,
@@ -415,12 +412,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2FF32C8251B1B9900AEF4F4 /* noraoni.grpc.swift in Sources */,
+				F2FF32E6251B4A0900AEF4F4 /* MemberListViewController.swift in Sources */,
 				F2FF3275251B17FA00AEF4F4 /* AppDelegate.swift in Sources */,
-				F2FF32C9251B1B9900AEF4F4 /* noraoni.pb.swift in Sources */,
 				F2FF3277251B17FA00AEF4F4 /* SceneDelegate.swift in Sources */,
 				F2FF32D2251B1BF700AEF4F4 /* CreateMemberViewController.swift in Sources */,
-				F2FF32CA251B1B9900AEF4F4 /* noraoni.proto in Sources */,
+				F2B028E9251B5D550063ECD4 /* SettingRuleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
