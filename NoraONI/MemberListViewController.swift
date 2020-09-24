@@ -24,6 +24,22 @@ class MemberListViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    var count = 0
+    @IBAction func startButton(_ sender: Any) {
+        if count % 2 == 0{
+        performSegue(withIdentifier: "demonView", sender: nil)
+            
+//            鬼側の判定だった場合移動する仕様
+            count += 1
+        }else{
+        performSegue(withIdentifier: "escapeView", sender: nil)
+//            逃げる側の判定だった場合移動する仕様
+            count += 1
+        }
+        
+    }
+    
+    
     //    メンバーを生成するためのボタン
     @IBAction func member(_ sender: Any) {
         let ac = UIAlertController(title: "IDを入力してください！！", message: "ホストで自動生成された６桁のIDを入力", preferredStyle: .alert)

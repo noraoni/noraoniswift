@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Starscream
 
 //ImageのUIを決定する関数
 class RegistImage:UIImageView{
@@ -43,8 +44,9 @@ class RegistButton:UIButton{
     }
 }
 
-class CreateMemberViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
-
+class CreateMemberViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+   
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var name: UITextField!
     @IBAction func AddImage(_ sender: Any) {
@@ -53,6 +55,7 @@ class CreateMemberViewController: UIViewController, UIImagePickerControllerDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
     
@@ -106,12 +109,48 @@ class CreateMemberViewController: UIViewController, UIImagePickerControllerDeleg
     
 //    ここにユーザーの名前と画像が登録されます。
     @IBAction func RegistUser(_ sender: Any) {
+        guard let Cname = name.text else {return}
+        var request = URLRequest(url: URL(string: "http://b3d8689375d5.ngrok.io/")!)
+        let socket = WebSocket(request: request)
+        request.timeoutInterval = 5
+        socket.delegate = self
+        socket.connect()
         
-        
-        
+        socket.write(string: Cname)
+        name.text = ""
         
     }
     
     
-    
+}
+
+extension CreateMemberViewController:WebSocketDelegate{
+    func didReceive(event: WebSocketEvent, client: WebSocket) {
+
+        var isConnected = Bool()
+        switch event {
+            case .connected(let headers):
+                isConnected = true
+                print("websocket is connected: \(headers)")
+            case .disconnected(let reason, let code):
+                isConnected = false
+                print("websocket is disconnected: \(reason) with code: \(code)")
+            case .text(let string):
+                print("Received text: \(string)")
+            case .binary(let data):
+                print("Received data: \(data.count)")
+            case .ping(_):
+                break
+            case .pong(_):
+                break
+            case .viabilityChanged(_):
+                break
+            case .reconnectSuggested(_):
+                break
+            case .cancelled:
+                isConnected = false
+        case .error( _):
+                isConnected = false
+            }
+    }
 }

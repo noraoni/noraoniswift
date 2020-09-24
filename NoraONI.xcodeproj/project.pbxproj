@@ -10,6 +10,9 @@
 		23D5ADEB75DE48AB88207CBF /* Pods_NoraONITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05ABE9C2076160174FA7E2FB /* Pods_NoraONITests.framework */; };
 		45819A618A14F4E8586068F3 /* Pods_NoraONI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9AF7F1CCC4AE4FB44821F8E /* Pods_NoraONI.framework */; };
 		F2B028E9251B5D550063ECD4 /* SettingRuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B028E8251B5D550063ECD4 /* SettingRuleViewController.swift */; };
+		F2B028EE251B8AC30063ECD4 /* DemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B028ED251B8AC30063ECD4 /* DemonViewController.swift */; };
+		F2B028F3251B934A0063ECD4 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B028F2251B934A0063ECD4 /* ResultViewController.swift */; };
+		F2B028FE251BEC070063ECD4 /* EscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B028FD251BEC070063ECD4 /* EscapeViewController.swift */; };
 		F2FF3275251B17FA00AEF4F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF3274251B17FA00AEF4F4 /* AppDelegate.swift */; };
 		F2FF3277251B17FA00AEF4F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF3276251B17FA00AEF4F4 /* SceneDelegate.swift */; };
 		F2FF327C251B17FA00AEF4F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FF327A251B17FA00AEF4F4 /* Main.storyboard */; };
@@ -49,6 +52,9 @@
 		A9AF7F1CCC4AE4FB44821F8E /* Pods_NoraONI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoraONI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC11CDBF33637D0EE54A0C1D /* Pods-NoraONITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoraONITests.release.xcconfig"; path = "Target Support Files/Pods-NoraONITests/Pods-NoraONITests.release.xcconfig"; sourceTree = "<group>"; };
 		F2B028E8251B5D550063ECD4 /* SettingRuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRuleViewController.swift; sourceTree = "<group>"; };
+		F2B028ED251B8AC30063ECD4 /* DemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemonViewController.swift; sourceTree = "<group>"; };
+		F2B028F2251B934A0063ECD4 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		F2B028FD251BEC070063ECD4 /* EscapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscapeViewController.swift; sourceTree = "<group>"; };
 		F2FF3271251B17FA00AEF4F4 /* NoraONI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoraONI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2FF3274251B17FA00AEF4F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2FF3276251B17FA00AEF4F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +154,9 @@
 				F2FF32D1251B1BF700AEF4F4 /* CreateMemberViewController.swift */,
 				F2FF32E5251B4A0900AEF4F4 /* MemberListViewController.swift */,
 				F2B028E8251B5D550063ECD4 /* SettingRuleViewController.swift */,
+				F2B028ED251B8AC30063ECD4 /* DemonViewController.swift */,
+				F2B028FD251BEC070063ECD4 /* EscapeViewController.swift */,
+				F2B028F2251B934A0063ECD4 /* ResultViewController.swift */,
 				F2FF327A251B17FA00AEF4F4 /* Main.storyboard */,
 				F2FF327D251B17FC00AEF4F4 /* Assets.xcassets */,
 				F2FF327F251B17FC00AEF4F4 /* LaunchScreen.storyboard */,
@@ -414,8 +423,11 @@
 			files = (
 				F2FF32E6251B4A0900AEF4F4 /* MemberListViewController.swift in Sources */,
 				F2FF3275251B17FA00AEF4F4 /* AppDelegate.swift in Sources */,
+				F2B028F3251B934A0063ECD4 /* ResultViewController.swift in Sources */,
 				F2FF3277251B17FA00AEF4F4 /* SceneDelegate.swift in Sources */,
 				F2FF32D2251B1BF700AEF4F4 /* CreateMemberViewController.swift in Sources */,
+				F2B028FE251BEC070063ECD4 /* EscapeViewController.swift in Sources */,
+				F2B028EE251B8AC30063ECD4 /* DemonViewController.swift in Sources */,
 				F2B028E9251B5D550063ECD4 /* SettingRuleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
